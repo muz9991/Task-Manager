@@ -1,0 +1,430 @@
+/*Have this font on css and ttf file.*/
+@font-face {
+  font-family: test Sans;
+  src: url('src/OpenSans-Regular.ttf');
+}
+#myTasks{
+/*! width: fit-content; */
+}
+html {
+/*	OPEN SANS FONT PROJECT REQUIREMENT */
+font-family: 'Open Sans', sans-serif;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+transition: all .3s ease-in .2s;
+
+
+}
+*{
+transition: all .3s ease-in .2s;
+}
+:root{
+
+--blue-color: #4fc3f7;
+}
+a{
+text-decoration: none;
+text-emphasis-style: none;
+color: inherit;
+}
+
+body {
+margin: 0;
+
+  background: #0288d1;
+  color:white;
+/*background Image*/
+background-image: url("backgroun.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;
+position: relative;
+
+}
+
+
+/*MY SHADOW*/
+
+.myShadow,.btn{
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.myShadow-2,.btn:hover {
+box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  width: 90%;
+margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+ul li{
+list-style: none;
+}
+/* to-do list container  */
+/*   */
+
+/*ROW and COL*/
+
+.row {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.row .col {
+float: left;
+box-sizing: border-box;
+padding: 0 0.75rem;
+}
+
+.row .col[class*="push-"], .row .col[class*="pull-"] {
+position: relative;
+}
+
+@media only screen and (max-width: 500px){
+.row .col.s6 {
+width: 50%;
+margin-left: auto;
+left: auto;
+right: auto;
+}
+
+
+
+.row .col.s10 {
+width: 83.3333333333%;
+margin-left: auto;
+left: auto;
+right: auto;
+}
+
+
+.row .col.s12 {
+width: 100%;
+margin-left: auto;
+left: auto;
+right: auto;
+}
+}
+
+@media only screen and (min-width: 601px) {
+
+.row .col.m4 {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.m6 {
+  width: 50%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+
+.row .col.m10 {
+  width: 83.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.m12 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+}
+
+@media only screen and (min-width: 993px) {
+
+.row .col.l3 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.l4 {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.l6 {
+  width: 50%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.l10 {
+  width: 83.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.l12 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+}
+
+/*FORM CONTROL*/
+::-webkit-input-placeholder {
+color: #d1d1d1;
+}
+
+:-moz-placeholder {
+/* Firefox 18- */
+color: #d1d1d1;
+}
+
+::-moz-placeholder {
+/* Firefox 19+ */
+color: #d1d1d1;
+}
+
+:-ms-input-placeholder {
+color: #d1d1d1;
+}
+
+input:not([type]),
+input[type=text],
+textarea {
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #9e9e9e;
+border-radius: 0;
+outline: none;
+height: 3rem;
+/*  width: 100%;*/
+font-size: 1rem;
+margin: 0 0 15px 0;
+padding: 0;
+box-shadow: none;
+box-sizing: content-box;
+transition: all .3s;
+}
+
+
+textarea{
+  overflow-y: hidden;
+  padding: 1.6rem 0;
+  resize: none;
+  min-height: 3rem;
+  font-family: sans-serif;
+}
+
+
+
+
+input:not([type]) + label:after,
+input[type=text] + label:after,
+textarea + label:after {
+display: block;
+content: "";
+position: absolute;
+top: 65px;
+opacity: 0;
+transition: .2s opacity ease-out, .2s color ease-out;
+}
+
+
+
+textarea {
+/*  width: 100%;*/
+height: 3rem;
+background-color: transparent;
+}
+
+
+
+/*BUTTON*/
+.btn{
+border: none;
+border-radius: 2px;
+display: inline-block;
+height: 36px;
+line-height: 36px;
+outline: 0;
+padding: 0 2rem;
+text-transform: uppercase;
+vertical-align: middle;
+-webkit-tap-highlight-color: transparent;
+}
+
+
+.btn {
+text-decoration: none;
+color: #fff;
+background-color: #4fc3f7;
+text-align: center;
+letter-spacing: .5px;
+transition: .2s ease-out;
+cursor: pointer;
+}
+
+.btn:hover {
+background-color: #81d4fa;
+}
+
+
+hr {
+box-sizing: content-box;
+height: 0;
+}
+
+#form {
+  display:none;
+  transition: all .2s ease-in;
+}
+
+
+textarea{
+color:white;
+}
+
+.red {
+background-color: #f44336;
+}
+
+.red:hover {
+background-color: #ef5350;
+}
+
+.big-div-container{
+display: grid;
+align-items: center;
+grid-template-columns: 1fr 2fr;
+}
+
+.big-div{
+display: flex;
+height:100%;
+
+
+}
+.nav-bar-section-container{
+background: white;
+height: 100%;
+padding: 0 3rem;
+display: flex;
+}
+.nav-bar-section-container ul {
+text-decoration: none;
+list-style: none;
+display: flex;
+padding: 0;
+flex-direction: column;
+
+}
+.nav-bar-section-container ul li{
+padding: 1.5rem 1rem;
+margin: .5rem 0;
+text-align: center;
+color: black;
+}
+
+.active-page{
+background-color: var(--blue-color);
+}
+.Calendar {
+float: right;
+display: flex;
+
+}
+
+
+/* Needs to worked on */
+* {
+box-sizing: border-box;
+border-radius: 20px
+}
+
+
+/* Remove margins and padding from the list */
+ul {
+margin: 0;
+padding: 0px;
+
+}
+
+/* Style the list items */
+ul li {
+cursor: pointer;
+position: center;
+padding: 0px 9px 12px 40px;
+background: #eee;
+font-size: 34px;
+transition: 0.2s;
+color: black; 
+
+/* make the list items unselectable */
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: auto;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+background: #888;
+color: black;
+text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+content: '';
+position: absolute;
+border-color: #fff;
+border-style: solid;
+border-width: 0 2px 2px 0;
+top: 10px;
+left: 16px;
+transform: rotate(45deg);
+height: 15px;
+width: 7px;
+}
+#myTasks {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 2rem;
+  grid-template-areas: "div div div div";
+}
+
+.d-flex {
+  width: 100%;
+}
+.gap-3{
+  gap: 3rem;
+}

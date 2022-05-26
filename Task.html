@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="src/animate.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="container">
+
+            <h1>Task Manager</h1>
+
+            <hr>
+            <div class="btn" onClick="myObj.show()" id="show">New Task</div>
+            <!--       TASK FORM-->
+            <section>
+                <div class="row">
+                    <form class="animated fadeIn" id="form">
+                        <div class="">
+                            <div class="s12 l12 m12">
+
+                                <input type="text" id="name" placeholder="Name">
+                                <input type="text" id="subject" placeholder="Subject">
+                                <input type="date" id="myDate">
+                            </div>
+
+                            <div class="row">
+                                <div class="s10 l10 m10">
+                                    <textarea id="description" placeholder="Describe the Task" cols="30" rows="10"
+                                        onClick="myObj.textSelect(this)"> Describe Your Task</textarea>
+
+
+                                </div>
+                            </div>
+                            <div class="col s12 l12 m12">
+                                <div class="btn" onclick="submitInfo()">SUBMIT</div>
+                                <div class="btn" onclick="myObj.hide()">HIDE</div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <div class="big-div-container">
+                <div class="big-div">
+
+                    <div class="nav-bar-section-container">
+                        <nav class="nav-bar" id="nav-bar">
+                            <ul class="nav-links">
+                                <li class="nav-item "><a href="index.html"> Home</a></li>
+                                <li class="nav-item"><a href="Calendar.html"> calendar</a></li>
+                                <li class="nav-item active-page"><a href="Task.html"> Task</a></li>
+                                <li class="nav-item"><a href="#"> Collabration</a></li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                
+
+                    <!--       TASK LIST-->
+
+                    <div class="row" style="text-align:center;">
+                        <div class="d-flex">
+                            <div id="myTasks">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="page.js"></script>
+</body>
+
+</html>

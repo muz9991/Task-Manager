@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="src/animate.css">
+
+    <style>
+   
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+    <div class="container">
+
+        <h1>Task Manager</h1>
+
+        <hr>
+
+    </div>
+    <div id="current_date">
+		<script>
+			var today = new Date();
+			var dd = String(today.getDate()).padStart(2, '0');
+			var mm = String(today.getMonth() + 1).padStart(2, '0');
+			var yyyy = today.getFullYear();
+			today = dd + '/' + mm + '/' + yyyy;
+			document.getElementById("current_date").innerHTML = today;	
+		</script>
+	</div>
+    <div id="current_time">
+		<script>
+			var d = new Date();
+			var n = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });;
+			
+			document.getElementById("current_time").innerHTML = n;
+		</script>
+	</div>
+
+        <div class="big-div-container">
+
+            <div class="big-div">
+       
+                <div class="nav-bar-section-container">
+                    <nav class="nav-bar" id="nav-bar">
+                        <ul class="nav-links">
+                            <li class="nav-item active-page"><a href="index.html"> Home</a></li>
+                            <li class="nav-item"><a href="Calendar.html"> Calendar</a></li>
+                            <li class="nav-item "><a href="Task.html"> Task</a></li>
+                            <li class="nav-item active-page"><a href="#"> Collabration</a></li>
+                        </ul>
+            
+                    </nav>
+                </div>
+    
+           
+        </div>
+    
+        <!--  -->
+        <div class="todo-list-container-div">
+            <div class = "Todays reminders">
+                <h2>My To Do List</h2>
+        </div>
+        <div class = "Fuckyou">    
+                <ul class="myUL">
+                    <li>Hit the gym</li>
+                    <li class="checked">Pay bills</li>
+                    <li>Meet George</li>
+                    <li>Buy eggs</li>
+                    <li class="checked">Read a book</li>
+                    <li>Organize office</li>
+                  </ul>
+        </div>
+    
+        </div>
+    
+
+        </div>
+        
+
+    <div class = "Inspirational quotes"></div>
+</div>
+</div>
+    
+
+
+
+    <script src="page.js"></script>
+</body>
+
+</html>
